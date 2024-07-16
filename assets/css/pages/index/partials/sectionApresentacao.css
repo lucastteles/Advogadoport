@@ -1,0 +1,257 @@
+/* <section class="apresentacao"> */
+section.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-branco);
+  background-image: url('/assets/image/RetanguloTopo.png'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  max-height: 110vh;
+}
+
+
+section.apresentacao img.divisor {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+}
+
+
+
+
+@keyframes brilhando {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+section.apresentacao img.principal {
+  width: 100%;
+  max-width: 50%;
+  padding: 20px 0 0 0;
+}
+
+section.apresentacao #intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  min-width: 50%;
+  padding: 80px;
+  z-index: 4;
+}
+
+
+
+section.apresentacao .titulo h1 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  padding: 30px 0 20px 0;
+}
+
+section.apresentacao .titulo h1 span{
+  color: #C9AB7B;
+}
+
+
+section.apresentacao .titulo p {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  margin: 5px 0 0 0;
+  width: 70%;
+  max-width: 600px;
+}
+
+
+section.apresentacao .titulo p span{
+  color: #C9AB7B;
+}
+/* 
+section.apresentacao .titulo  .texte {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+} */
+
+
+section.apresentacao .titulo button {
+  display: flex;
+  align-items: center;
+  background-color: #C9AB7B;
+  padding: 10px 25px 10px 10px;
+  border-radius: 2px;
+  margin: 20px 0 0 0;
+  transition: all 0.3s;
+}
+
+section.apresentacao .titulo button:hover {
+  filter: brightness(110%);
+}
+
+section.apresentacao .titulo button h3 {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  color: var(--cor-branco);
+}
+section.apresentacao .titulo button .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  margin: 0 10px 0 0;
+
+}
+
+section.apresentacao .titulo button .icone img {
+  width: 100%;
+  max-width: 20px;
+  
+}
+
+
+
+
+
+
+
+section.apresentacao .titulo .atendimento{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 25px 0px 0px;
+  width: 100%;
+
+}
+
+
+section.apresentacao .titulo .atd{
+  display: flex;
+  align-items: center;
+
+  padding: 10px 0px 00px 20px;
+  /* border-radius: 2px; */
+  /* margin: 20px 0 0 0; */
+  transition: all 0.3s;
+
+}
+
+/* section.apresentacao .titulo .atd .atendimento {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  color: var(--cor-branco);
+
+} */
+
+
+section.apresentacao .titulo .atd .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  margin: 0 12px -10px 0;
+
+}
+
+
+section.apresentacao .titulo .atd .icone img{
+  width: 100%;
+  max-width: 20px;
+}
+
+
+section.apresentacao .titulo .atd .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 6px -10px 0; /* Reduzir a margem direita para aproximar o texto */
+}
+
+section.apresentacao .titulo .atd .icone img {
+  width: 100%;
+  max-width: 20px;
+}
+
+
+/* 
+Responsivo 
+*/
+@media screen and (max-width: 1000px) {
+  section.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px 0 0 0; */
+    max-height: none;
+  }
+  section.apresentacao .titulo {
+    align-items: center;
+    text-align: center;
+    padding: 30px 30px 40px 30px;
+    width: 100%;
+  }
+ 
+  section.apresentacao .titulo h1 {
+    font-size: var(--f5);
+    max-width: 300px;
+  }
+  section.apresentacao .titulo p {
+    font-size: var(--f3);
+    max-width: 550px;
+    width: 100%;
+  }
+  section.apresentacao .titulo button {
+    padding: 10px 35px 10px 10px;
+    margin: 15px 0 0 0;
+  }
+  section.apresentacao .titulo button h3 {
+    font-size: var(--f3);
+  }
+  
+  section.apresentacao .imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    
+  }
+  section.apresentacao img.principal {
+    max-width: 400px;
+  
+  }
+
+  section.apresentacao img.divisor{
+    width: 150%;
+  }
+  
+  
+}

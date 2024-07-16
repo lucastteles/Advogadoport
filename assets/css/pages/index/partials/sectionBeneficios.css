@@ -1,0 +1,177 @@
+/* <section class="beneficios"> */
+
+section.beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--cor-preto);
+    padding: 80px;
+  }
+  
+  section.beneficios .titulo {
+    text-align: center;
+    padding: 0 0 50px 0;
+  }
+  
+  section.beneficios .titulo h2 {
+    /* font-family: var(--estilo);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--cor-branco); */
+    font-family: var(--bold);
+   font-size: clamp(1.5rem, 2.5vw, 3rem);
+    color: var(--cor-branco); 
+    line-height: 1.3;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  section.beneficios .titulo h2 span {
+    color: var(--cor-vermelho);
+  }
+  
+  section.beneficios .itens {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  section.beneficios .itens .item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-escuro-4);
+    box-shadow: var(--sombra);
+    border-radius: 10px;
+    padding: 50px;
+    width: 28%;
+    height: 150px;
+    margin: 20px;
+  
+    position: relative;
+  }
+  
+  section.beneficios .itens .item.meio {
+    margin: 0 50px;
+  }
+  
+  section.beneficios .itens .item img {
+    width: 25px;
+    /* max-width: 50px; */
+    position: absolute;
+    top: 20px;
+    left: 50px;
+  }
+  
+  section.beneficios .itens .item h3 img {
+    font-family: var(--estilo);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--cor-branco);
+  }
+  
+  section.beneficios .itens .item p {
+    font-family: var(--bold);
+    font-size: var(--f3);
+    color: var(--cor-branco);
+    line-height: 1.5;
+    padding: 20px 0 0 0;
+  }
+  
+  section.beneficios button {
+    display: flex;
+    align-items: center;
+    background-color: #C9AB7B;
+    padding: 10px 25px 10px 10px;
+    border-radius: 2px;
+    margin: 50px 0 0 0;
+    transition: all 0.3s;
+  }
+  
+  section.beneficios button:hover {
+    filter: brightness(110%);
+  }
+  
+  section.beneficios button h3 {
+    font-family: var(--bold);
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    color: var(--cor-branco);
+  }
+  section.beneficios button .icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+  }
+  
+  section.beneficios button .icone img {
+    width: 100%;
+    max-width: 20px;
+  }
+/*********************
+
+
+  
+  /* Responsivo */
+  
+  @media screen and (max-width: 1000px) {
+    section.beneficios {
+      padding: 0 30px 50px 30px;
+    }
+    section.beneficios .titulo {
+      padding: 0 0 50px 0;
+    }
+
+    section.beneficios .titulo h2{
+      font-size: var(--f4);      
+    }
+
+    section.beneficios .itens {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    section.beneficios .itens .item {
+      padding: 60px 30px;
+      min-height: auto;
+      max-width: 500px;
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+    section.beneficios .itens .item.meio {
+      margin: 50px 0;
+    }
+
+    section.beneficios .itens .item img {
+      width: 25px;
+      /* max-width: 50px; */
+      position: absolute;
+      top: 20px;
+      left: 30px;
+    }
+
+    section.beneficios .item p {
+      font-size: var(--f3); /* Ajusta o tamanho da fonte */
+      width: 100%; /* Define a largura como 100% */
+      max-width: none; /* Remove a largura máxima */
+      margin: 10px 0; /* Ajusta a margem superior */
+  }
+
+    /* section.beneficios button {
+      border-radius: 5px;
+    } */
+
+    section.beneficios .itens .item img {
+      width: 20px;
+    
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+  }
+  

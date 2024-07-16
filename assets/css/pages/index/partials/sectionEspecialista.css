@@ -1,0 +1,182 @@
+/* <section class="apresentacao"> */
+section.especialista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-branco);
+  background-image: url('/assets/image/DefesaEspecializada\ 1.png'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+section.especialista img.divisor {
+  position: absolute;
+  z-index: 99999;
+  bottom: -270px;
+  left: 1100px;
+  width: 30%;
+
+}
+
+
+
+
+
+@keyframes brilhando {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+section.especialista img.principal {
+  width: 100%;
+  max-width: 50%;
+  padding: 80px 0 0 0;
+}
+
+section.especialista .titulo-defesa {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  min-width: 50%;
+  padding: 80px;
+  z-index: 4;
+}
+
+
+
+section.especialista .titulo-defesa h1 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  padding: 30px 0 20px 0;
+  width: 60%;
+  max-width: 500px;
+}
+
+section.especialista .titulo-defesa h1 span{
+  color: #C9AB7B;
+  font-size: clamp(3.2rem, 2.5vw, 3rem);
+}
+
+
+section.especialista .titulo-defesa p {
+  font-family: var(--light);
+  font-size: var(--f3);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  width: 70%;
+  max-width: 600px;
+
+}
+
+
+section.especialista .titulo-defesa h3 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  margin: 20px 0 0 0;
+  width: 70%;
+  max-width: 600px;
+
+}
+
+
+
+/********************/
+section.especialista  .item {
+  display: flex;
+  align-items: center;
+  margin: 3px 0 0 0;
+}
+section.especialista .item img {
+  width: 100%;
+  max-width: 15px; 
+  margin: 0 10px 0 0;
+}
+section.especialista .item h3 {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: var(--cor-branco);
+  width: 80%;
+  max-width: 600px;
+}
+/*********************/
+
+
+
+@media screen and (max-width: 1000px) {
+  section.especialista {
+      flex-direction: column;
+    
+  }
+
+  section.especialista img.principal {
+    max-width: 500px; /* Ajusta o espaçamento superior e inferior */
+   
+  }
+
+  section.especialista .titulo-defesa {
+    
+    padding: 0px 30px 40px 30px;
+    width: 100%;
+  }
+
+  section.especialista .titulo-defesa h1 {
+    font-size: var(--f5);
+    max-width: 500px;
+    width: 100%;
+  }
+
+  section.especialista .titulo-defesa h1 span {
+    font-size: var(--f6);
+    max-width:500px;
+    width: 100%;
+  }
+
+  section.especialista .titulo-defesa p {
+      font-size: var(--f3); /* Ajusta o tamanho da fonte */
+      width: 100%; /* Define a largura como 100% */
+      max-width: 500px; /* Remove a largura máxima */
+
+      margin: 10px 0; /* Ajusta a margem superior */
+  }
+
+
+  section.especialista .item h3 {
+    font-size: var(--f3); /* Ajusta o tamanho da fonte */
+    width: 100%; /* Define a largura como 100% */
+    max-width: 500px; /* Remove a largura máxima */
+
+    margin: 10px 0; /* Ajusta a margem superior */
+}
+
+section.especialista img.divisor {
+  position: absolute;
+  z-index: 99999;
+  bottom: -570px;
+  right: 5100px;
+
+  width: 100%;
+
+}
+
+}
+
+
+
+

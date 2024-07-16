@@ -1,0 +1,13 @@
+/* Global */
+@import '../../global/global.css';
+
+/* Partials */
+@import './partials/sectionApresentacao.css';
+@import './partials/sectionLiberdade.css';
+@import './partials/sectionDefesa.css';
+@import './partials/sectionBeneficios.css';
+@import './partials/sectionEspecialista.css';
+@import './partials/sectionMapa.css';
+@import './partials/sectionDuvidas.css';
+@import './image/sectionApresentacao.css';
+

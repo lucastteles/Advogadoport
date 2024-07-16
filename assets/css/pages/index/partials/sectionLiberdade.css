@@ -1,0 +1,137 @@
+section.liberdade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 800px;
+  background-image: url('/assets/image/Liberdadebg.png'); 
+  overflow: hidden;
+}
+
+
+section.liberdade .itens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px; 
+  width: 70%;
+  background: linear-gradient(to right, #FFFFFF, transparent), linear-gradient(269.2deg,  #C9AB7B 13.54%,  #C9AB7B 50.52%, #C9AB7B 85.94%);
+  border-radius: 10px;
+  margin: 100px 0 0 0;
+}
+
+section.liberdade.animar .texto {
+  animation: textoVelocidade 1s ease-in-out;
+}
+
+@keyframes textoVelocidade {
+  0% {
+    opacity: 0;
+    transform: translate(50px, 0);
+  }
+}
+
+section.liberdade .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 50px;
+}
+
+section.liberdade .texto h2 {
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  color: var(--cor-preto);
+  line-height: 1.3;
+  margin: 5px 0 0 0;
+  width: 60%;
+  max-width: 500px;
+}
+
+section.liberdade .texto p {
+  font-family: var(--light);
+  font-size: var(--f3);
+  color: var(--cor-preto);
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  width: 90%;
+  max-width: 600px;
+}
+
+section.liberdade.ativa .imagem img.nuvem {
+  animation-play-state: paused;
+}
+
+section.liberdade.ativa .imagem img.foguete {
+  animation-play-state: paused;
+}
+
+section.liberdade .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+section.liberdade .imagem img {
+  width: 120%;
+  height: 330px;
+  transform: scale(1.5);
+}
+
+section.liberdade .imagem .sombra {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(-90deg, #fff, #ffffff00);
+  background: -webkit-linear-gradient(-90deg, #fff, #ffffff00);
+  pointer-events: none;
+}
+
+/* 
+Responsivo 
+*/
+@media screen and (max-width: 1000px) {
+  section.liberdade {
+    flex-direction: column-reverse;
+    min-height: auto; /* Ajustado para telas menores */
+  }
+
+  section.liberdade img.divisor{
+    left: -10%;
+    width: 120%;
+  }
+
+  section.liberdade .itens {
+    flex-direction: column;
+    width: 90%; /* Largura ajustada */
+    padding: 20px; /* Ajustado para melhor espaçamento */
+    height: auto; /* Ajustado para telas menores */
+    margin: 50px 0 0 0; /* Ajustado para melhor espaçamento */
+  }
+
+  section.liberdade .texto {
+    padding: 20px; /* Ajustado para telas menores */
+  }
+  
+  section.liberdade .texto h2 {
+    font-size: var(--f5); /* Tamanho da fonte ajustado */
+    max-width: 500px;
+    width: 100%; /* Largura máxima ajustada */
+  }
+
+  section.liberdade .texto p {
+    font-family: var(--bold);
+    font-size: var(--f3); /* Tamanho da fonte ajustado */
+    max-width: 100%; /* Largura máxima ajustada */
+  }
+
+  section.liberdade .imagem img {
+    max-width: 400px; /* Largura ajustada */
+    height: auto; /* Altura ajustada */
+    transform: scale(1); /* Escala ajustada */
+  }
+}

@@ -1,0 +1,232 @@
+/* 
+<section class="duvidas"> 
+*/
+section.duvidas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    width: 100%;
+    background-color: var(--cor-preto);
+
+    min-height: 150vh;
+
+  }
+
+
+  /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--cor-preto);
+    padding: 80px; */
+  section.duvidas .texto {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 60px;
+     width: 100%;
+  }
+
+  section.duvidas .texto h2 {
+    align-items: center;
+     text-align: center;
+    width: 100%;
+  }
+
+
+  /* section.duvidas .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px;
+    width: 50%;
+  } */
+
+  
+
+  section.duvidas .texto .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  section.duvidas .texto .img-container img {
+    width: 40%;
+  }
+
+  
+  section.duvidas .texto h2 {
+    font-family: var(--semibold);
+    font-size: var(--f6);
+    color: var(--cor-branco);
+    line-height: 1.3;
+    margin: -25px 0 15px 0;
+  }
+ 
+  section.duvidas .texto p {
+    font-family: var(--light);
+    font-size: var(--f3);
+    color: var(--cor-preto);
+    line-height: 1.5;
+    margin: 5px 0 15px 0;
+  }
+  section.duvidas .texto .duvida {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 30px;
+    background-color: var(--cor-preto);
+    border-radius: 10px;
+    border: 1px solid #CFD6DA;
+    width: 100%;
+    margin: 10px 0 0 0;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  section.duvidas .texto .duvida:hover {
+    border: 1px solid #C9AB7B;
+  }
+  section.duvidas .texto .duvida .nome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  section.duvidas .texto .duvida .nome img {
+    width: 100%;
+    max-width: 15px;
+  }
+  section.duvidas .texto .duvida .nome h3 {
+    font-family: var(--semibold);
+    font-size: var(--f2);
+    color: var(--cor-branco);
+    line-height: 1.5;
+  }
+  section.duvidas .texto .duvida h4 {
+    font-family: var(--light);
+    font-size: var(--f2);
+    color: #C9AB7B;
+    line-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    margin: 0 0 0 0;
+    transition: all 0.3s;
+  }
+  section.duvidas .texto .duvida.ativo h4 {
+    line-height: 1.5;
+    opacity: 1;
+    visibility: visible;
+    margin: 10px 0 0 0;
+  }
+
+
+
+  section.duvidas button {
+    display: flex;
+    align-items: center;
+    background-color: #C9AB7B;
+    padding: 10px 25px 10px 10px;
+    border-radius: 2px;
+    margin: 20px 0 0 0;
+    transition: all 0.3s;
+  }
+  
+  section.duvidas button:hover {
+    filter: brightness(110%);
+  }
+  
+  section.duvidas button h3 {
+    font-family: var(--bold);
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    color: var(--cor-branco);
+  }
+  section.duvidas button .icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    margin: 0 10px 0 0;
+  }
+  
+  section.duvidas button .icone img {
+    width: 100%;
+    max-width: 20px;
+  }
+
+  /* 
+  Responsivo 
+  */
+  @media screen and (max-width: 1000px) {
+    section.duvidas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    section.duvidas .texto {
+      align-items: center;
+      padding: 60px 30px 40px 30px;
+      width: 100%;
+    }
+    section.duvidas .texto h2 {
+      font-size: var(--f5);
+      text-align: center;
+    }
+    section.duvidas .texto p {
+      font-size: var(--f3);
+      text-align: center;
+      max-width: 350px;
+    }
+    section.duvidas .texto .duvida {
+      padding: 25px;
+    }
+    section.duvidas .texto .duvida .nome img {
+      max-width: 12px;
+    }
+    section.duvidas .imagem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+      padding: 0 0 40px 0;
+    }
+
+    section.duvidas .imagem{
+      width: 100%;
+    }
+
+    section.duvidas .texto .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+  
+    section.duvidas .texto .img-container img {
+      width: 90%;
+      max-width: 500px;
+    }
+
+
+    section.duvidas .titulo button {
+      padding: 10px 35px 10px 10px;
+      margin: 15px 0 0 0;
+
+    }
+    section.duvidass .titulo button h3 {
+      font-size: var(--f3);
+    }
+  }
+  
